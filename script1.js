@@ -1,15 +1,17 @@
 let x;
 x = + prompt("Įveskite skaičių");
 
+alert("jeigu true tai skaičius yra lyginis, jeigu false tai skaičius nėra lyginis");
+
 let skaicius = arLyginis(x);
+alert(skaicius);
 
-function arLyginis(num){
-    return num % 2;
-}
 
-if (skaicius == 0){
-    alert("skaičius yra lyginis");
-}
-else {
-    alert("skaičius yra nelyginis");
+function arLyginis(skaicius){
+    if (skaicius %2 == 0){
+        return true;
+    }
+    else {
+        return false;
+    }
 }

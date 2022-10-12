@@ -2,14 +2,14 @@ let x;
 x = + prompt("Įveskite skaičių");
 
 let skaicius = arDalinasiIsPenkiu(x);
+alert(skaicius);
+alert("Jeigu true - skaičius dalinasi iš 5, jeigu false - ne");
 
 function arDalinasiIsPenkiu(num){
-    return num % 5;
-}
-if (skaicius == 0){
-    alert("skaicius dalinasi iš 5");
-}
-
-else{
-    alert("skaičius nesidalina iš 5");
+    if (num % 5 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
